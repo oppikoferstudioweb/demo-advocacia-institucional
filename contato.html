@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato &amp; Localização | Viana &amp; Alencar Advogados Associados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-[#F8F7F4] text-[#0F172A]">
+
+  <!-- HEADER -->
+  <header id="site-header" data-transparent="false" class="site-header is-solid">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="h-10 px-2.5 min-w-[46px] shrink-0 rounded-md border border-[#B8924A]/65 bg-[#0F172A] flex items-center justify-center text-[#B8924A] font-serif-display text-sm font-semibold tracking-tight leading-none">V&amp;A</div>
+        <div class="leading-tight">
+          <span class="font-serif-display text-xl font-medium block text-[#0F172A]">Viana &amp; Alencar</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-slate-500 block">Advogados Associados</span>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Navegação principal">
+        <a href="index.html" data-nav-page="index.html" class="nav-link">Início</a>
+        <a href="sobre.html" data-nav-page="sobre.html" class="nav-link">O Escritório</a>
+        <a href="atuacao.html" data-nav-page="atuacao.html" class="nav-link">Áreas de Atuação</a>
+        <a href="artigos.html" data-nav-page="artigos.html" class="nav-link">Artigos &amp; Insights</a>
+        <a href="contato.html" data-nav-page="contato.html" class="nav-link">Contato</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="tel:+551130428800" class="hidden xl:inline-flex items-center gap-2 text-xs font-medium text-slate-600 hover:text-[#0F172A] mr-2">
+          <i class="fa-solid fa-phone text-[#B8924A]"></i><span>(11) 3042-8800</span>
+        </a>
+        <button type="button" data-open-consult class="hidden sm:inline-flex btn-bronze !py-2.5 !px-5 !text-xs">
+          <i class="fa-regular fa-calendar-check"></i><span>Agendar Consulta</span>
+        </button>
+        <button id="mobile-menu-open" type="button" aria-label="Abrir menu" aria-expanded="false" class="lg:hidden w-10 h-10 rounded-md border border-[#0F172A]/20 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Menu móvel">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <div>
+          <span class="font-serif-display text-2xl font-medium text-white block">Viana &amp; Alencar</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-[#B8924A]">São Paulo • Atuação Nacional</span>
+        </div>
+        <button id="mobile-menu-close" type="button" aria-label="Fechar menu" class="w-10 h-10 rounded-md border border-white/15 flex items-center justify-center text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+      </div>
+      <nav class="mt-8 flex flex-col gap-5">
+        <a href="index.html" data-nav-page="index.html" class="text-xl font-serif-display text-white/90 hover:text-[#B8924A] flex justify-between"><span>Início</span><i class="fa-solid fa-arrow-right text-xs opacity-40"></i></a>
+        <a href="sobre.html" data-nav-page="sobre.html" class="text-xl font-serif-display text-white/90 hover:text-[#B8924A] flex justify-between"><span>O Escritório</span><i class="fa-solid fa-arrow-right text-xs opacity-40"></i></a>
+        <a href="atuacao.html" data-nav-page="atuacao.html" class="text-xl font-serif-display text-white/90 hover:text-[#B8924A] flex justify-between"><span>Áreas de Atuação</span><i class="fa-solid fa-arrow-right text-xs opacity-40"></i></a>
+        <a href="artigos.html" data-nav-page="artigos.html" class="text-xl font-serif-display text-white/90 hover:text-[#B8924A] flex justify-between"><span>Artigos &amp; Insights</span><i class="fa-solid fa-arrow-right text-xs opacity-40"></i></a>
+        <a href="contato.html" data-nav-page="contato.html" class="text-xl font-serif-display text-white/90 hover:text-[#B8924A] flex justify-between"><span>Contato</span><i class="fa-solid fa-arrow-right text-xs opacity-40"></i></a>
+      </nav>
+      <div class="mt-8 pt-6 border-t border-white/10">
+        <button type="button" data-open-consult class="btn-bronze w-full"><i class="fa-regular fa-calendar-check"></i><span>Agendar Consulta</span></button>
+      </div>
+    </div>
+    <div class="pt-6 border-t border-white/10 text-xs text-slate-400 space-y-2">
+      <p><i class="fa-solid fa-phone text-[#B8924A] mr-2"></i>Recepção: (11) 3042-8800</p>
+      <p><i class="fa-regular fa-envelope text-[#B8924A] mr-2"></i>contato@vianaalencar.adv.br</p>
+    </div>
+  </aside>
+
+  <!-- PAGE HERO -->
+  <section class="pt-32 pb-14 bg-[#0F172A] text-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="eyebrow mb-4 hero-reveal">Canais de Atendimento</div>
+      <h1 class="font-serif-display text-4xl sm:text-5xl font-medium max-w-3xl leading-tight hero-reveal">
+        Fale com nossa recepção ou formalize sua consulta por e-mail e videoconferência.
+      </h1>
+    </div>
+  </section>
+
+  <!-- MULTICHANNEL CONTACT GRID -->
+  <section class="py-16 max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-5 space-y-5 reveal-group">
+      <div class="editorial-card p-6 reveal-item">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-[#B8924A]">Central Telefônica</span>
+        <h2 class="font-serif-display text-2xl font-medium mt-1">Recepção Comercial</h2>
+        <p class="text-sm text-slate-600 mt-1">Atendimento humano direto de segunda a sexta, das 09h às 18h.</p>
+        <a href="tel:+551130428800" class="mt-4 inline-flex items-center gap-2 text-base font-bold text-[#0F172A] hover:text-[#B8924A]">
+          <i class="fa-solid fa-phone text-[#B8924A]"></i> (11) 3042-8800
+        </a>
+      </div>
+
+      <div class="editorial-card p-6 reveal-item">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-[#B8924A]">E-mail Institucional</span>
+        <h2 class="font-serif-display text-2xl font-medium mt-1">Envio de Documentos &amp; Propostas</h2>
+        <p class="text-sm text-slate-600 mt-1">Ideal para contratos, notificações ou solicitações corporativas formais.</p>
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <a href="mailto:contato@vianaalencar.adv.br" class="text-sm font-semibold text-[#0F172A] hover:underline">contato@vianaalencar.adv.br</a>
+          <button type="button" onclick="copyToClipboard('contato@vianaalencar.adv.br', 'E-mail copiado!')" class="px-3 py-1 rounded bg-[#EFECE6] text-xs font-semibold hover:bg-[#B8924A] hover:text-white transition-colors">
+            <i class="fa-regular fa-copy mr-1"></i>Copiar
+          </button>
+        </div>
+      </div>
+
+      <div class="editorial-card p-6 reveal-item">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-[#B8924A]">Atendimento Rápido</span>
+        <h2 class="font-serif-display text-2xl font-medium mt-1">WhatsApp Corporativo</h2>
+        <p class="text-sm text-slate-600 mt-1">Para confirmações de agenda, envio de localização ou triagem rápida.</p>
+        <a href="https://wa.me/5511999990000" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#0F172A] hover:text-[#B8924A]">
+          <i class="fa-brands fa-whatsapp text-[#B8924A] text-base"></i> (11) 99999-0000
+        </a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 reveal-block">
+      <div class="editorial-card p-7 sm:p-9">
+        <h2 class="font-serif-display text-3xl font-medium text-[#0F172A]">Formulário de Triagem Formal</h2>
+        <p class="mt-2 text-sm text-slate-600">Preencha os dados abaixo para direcionarmos sua demanda diretamente ao sócio responsável.</p>
+
+        <form id="page-contact-form" class="mt-6 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Nome completo *</label>
+              <input id="pc-name" type="text" required placeholder="Seu nome" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm focus:outline-none focus:border-[#B8924A]" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Telefone / Ramal *</label>
+              <input id="pc-phone" type="tel" required placeholder="(11) 99999-9999" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm focus:outline-none focus:border-[#B8924A]" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">E-mail *</label>
+              <input id="pc-email" type="email" required placeholder="voce@empresa.com.br" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm focus:outline-none focus:border-[#B8924A]" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Perfil &amp; Formato</label>
+              <select id="pc-format" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm bg-white">
+                <option>Empresa — Reunião Online</option>
+                <option>Empresa — Reunião Presencial</option>
+                <option>Pessoa Física — Reunião Online</option>
+                <option>Pessoa Física — Retorno por E-mail/Tel</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Descrição objetiva do assunto *</label>
+            <textarea id="pc-msg" rows="4" required placeholder="Conte resumidamente como podemos ajudar..." class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm focus:outline-none focus:border-[#B8924A]"></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+            <span class="text-xs text-slate-500"><i class="fa-solid fa-shield-halved text-[#B8924A] mr-1"></i>Retorno estimado em até 1 dia útil.</span>
+            <button type="submit" class="btn-bronze">Enviar Solicitação Formal</button>
+          </div>
+        </form>
+
+        <div id="pc-feedback" class="hidden mt-6 p-5 rounded-lg bg-[#EFECE6] border border-[#B8924A]/30">
+          <p class="font-semibold text-[#0F172A] text-sm"><i class="fa-solid fa-circle-check text-[#B8924A] mr-2"></i>Mensagem registrada com sucesso! Protocolo <span id="pc-proto">VA-0000</span>.</p>
+          <p class="text-xs text-slate-600 mt-1">Nossa recepção jurídica analisará sua solicitação e responderá pelo canal escolhido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA & SEDE -->
+  <section id="mapa" class="pb-20 max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="editorial-card overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+      <div class="lg:col-span-4 p-8 bg-[#0F172A] text-white flex flex-col justify-between">
+        <div>
+          <div class="eyebrow mb-3">Sede Física</div>
+          <h2 class="font-serif-display text-3xl font-medium">Itaim Bibi • São Paulo</h2>
+          <p class="mt-4 text-sm text-slate-300 leading-relaxed">
+            Av. Brigadeiro Faria Lima, 3.477 — 14º andar<br />
+            Edifício Corporate Faria Lima<br />
+            CEP 04538-133 • São Paulo - SP
+          </p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/10 text-xs text-slate-400 space-y-2">
+          <p><i class="fa-solid fa-car text-[#B8924A] mr-2"></i>Estacionamento com manobrista no subsolo</p>
+          <p><i class="fa-solid fa-train-subway text-[#B8924A] mr-2"></i>Próximo à Estação Faria Lima / Vila Olímpia</p>
+        </div>
+      </div>
+      <div class="lg:col-span-8 min-h-[320px] bg-slate-200">
+        <iframe
+          title="Mapa da Sede Viana & Alencar"
+          src="https://www.google.com/maps?q=Av.+Brig.+Faria+Lima,+3477,+Sao+Paulo&output=embed"
+          class="w-full h-full min-h-[320px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0F172A] text-slate-300 pt-14 pb-8">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>© 2026 Viana &amp; Alencar Advogados Associados (Sociedade OAB/SP 41.892-J)</p>
+      <div class="flex gap-5">
+        <a href="index.html" class="hover:text-[#B8924A]">Início</a>
+        <a href="sobre.html" class="hover:text-[#B8924A]">O Escritório</a>
+        <a href="atuacao.html" class="hover:text-[#B8924A]">Áreas</a>
+        <a href="artigos.html" class="hover:text-[#B8924A]">Artigos</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL GLOBAL -->
+  <div id="consult-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="consult-modal-title">
+    <div class="modal-panel p-6 sm:p-8">
+      <div id="consult-form-view">
+        <div class="flex items-start justify-between gap-4 pb-5 border-b border-[#0F172A]/10">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-[#B8924A]">Triagem &amp; Agendamento</span>
+            <h3 id="consult-modal-title" class="font-serif-display text-2xl sm:text-3xl font-medium text-[#0F172A] mt-1">Solicitar Atendimento Jurídico</h3>
+          </div>
+          <button type="button" data-close-modal aria-label="Fechar" class="w-9 h-9 rounded-md border border-[#0F172A]/15 flex items-center justify-center text-slate-500"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <form id="consult-form" class="mt-6 space-y-4">
+          <input type="hidden" id="consult-format" value="Videoconferência" />
+          <input type="hidden" id="consult-period" value="Manhã (09h–12h)" />
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-2">Formato preferido</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <button type="button" data-format-pill="Videoconferência" class="option-pill active">Videoconferência</button>
+              <button type="button" data-format-pill="Presencial (Faria Lima)" class="option-pill">Presencial (SP)</button>
+              <button type="button" data-format-pill="Retorno por E-mail/Tel" class="option-pill">E-mail / Telefone</button>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-2">Melhor período</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <button type="button" data-period-pill="Manhã (09h–12h)" class="option-pill active">Manhã (09h–12h)</button>
+              <button type="button" data-period-pill="Tarde (14h–18h)" class="option-pill">Tarde (14h–18h)</button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <input id="consult-name" type="text" required placeholder="Nome completo *" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm" />
+            <input id="consult-company" type="text" placeholder="Empresa (opcional)" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm" />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <input id="consult-email" type="email" required placeholder="E-mail *" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm" />
+            <select id="consult-area" class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm bg-white">
+              <option value="Direito Empresarial">Direito Empresarial &amp; Contratos</option>
+              <option value="Trabalhista Estratégico">Trabalhista Estratégico</option>
+              <option value="Digital & LGPD">Direito Digital &amp; LGPD</option>
+              <option value="Patrimonial & Imobiliário">Patrimonial &amp; Imobiliário</option>
+            </select>
+          </div>
+          <textarea id="consult-notes" rows="3" placeholder="Resumo da demanda..." class="w-full px-3.5 py-2.5 rounded-md border border-[#0F172A]/15 text-sm"></textarea>
+          <button type="submit" class="btn-bronze w-full">Registrar Solicitação</button>
+        </form>
+      </div>
+      <div id="consult-success-view" class="hidden py-6 text-center space-y-4">
+        <div class="w-14 h-14 rounded-full bg-[#B8924A]/10 text-[#B8924A] flex items-center justify-center mx-auto text-2xl"><i class="fa-solid fa-check"></i></div>
+        <h3 class="font-serif-display text-3xl font-medium">Protocolo <span id="consult-protocol-code">VA-000000</span></h3>
+        <p id="consult-protocol-summary" class="text-sm text-slate-600"></p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+          <button type="button" data-close-modal class="btn-outline-dark !text-xs">Fechar</button>
+          <a id="consult-wa-fallback" href="#" target="_blank" rel="noopener" class="btn-bronze !text-xs"><i class="fa-brands fa-whatsapp"></i> Enviar também via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('page-contact-form');
+      const feedback = document.getElementById('pc-feedback');
+      const protoEl = document.getElementById('pc-proto');
+      if (form && feedback) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (protoEl) protoEl.textContent = 'VA-' + Math.floor(100000 + Math.random() * 900000);
+          feedback.classList.remove('hidden');
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
